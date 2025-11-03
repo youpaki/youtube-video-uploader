@@ -4,6 +4,7 @@ A simple and efficient tool to automatically upload videos from one or multiple 
 
 ## Features
 
+- 🖥️ **Two versions available**: Command-line and Graphical User Interface (GUI)
 - 🎥 Batch upload videos from multiple folders
 - 🔐 OAuth2 authentication for secure YouTube account linking
 - 📁 Support for recursive folder scanning
@@ -12,6 +13,8 @@ A simple and efficient tool to automatically upload videos from one or multiple 
 - 🏷️ Add custom descriptions, tags, and categories
 - 📊 Upload progress tracking
 - 💾 Persistent authentication (no need to re-authenticate every time)
+- 📋 Video summary before upload (GUI version)
+- 📝 Real-time upload logs (GUI version)
 
 ## Prerequisites
 
@@ -37,10 +40,15 @@ Before using this application, you need to:
 
 ### Using the Executable (Windows)
 
-1. Download the latest release from the [Releases page](../../releases)
-2. Extract the ZIP file
-3. Place your `credentials.json` file in the same folder as the executable
-4. Run `youtube_uploader.exe`
+**GUI Version (Recommended for beginners):**
+1. Download `youtube_uploader_gui.exe` from the [Releases page](../../releases)
+2. Place your `credentials.json` file in the same folder
+3. Double-click `youtube_uploader_gui.exe` to launch the graphical interface
+
+**Command-line Version:**
+1. Download `youtube_uploader.exe` from the [Releases page](../../releases)
+2. Place your `credentials.json` file in the same folder
+3. Run from command prompt with folder paths as arguments
 
 ### Using Python (All Platforms)
 
@@ -58,6 +66,23 @@ Before using this application, you need to:
 3. Place your `credentials.json` file in the project folder
 
 ## Usage
+
+### GUI Version (Graphical Interface)
+
+Run the GUI application:
+```bash
+python youtube_uploader_gui.py
+```
+
+The GUI provides:
+1. **Authentication** - Click "Authenticate with YouTube" to link your account
+2. **Add Folders** - Select one or more folders containing videos
+3. **Video Summary** - See all videos that will be uploaded
+4. **Upload Settings** - Choose privacy (Private/Unlisted/Public), add description, tags, and category
+5. **Progress Tracking** - Watch real-time upload progress with detailed logs
+6. **Start Upload** - Click to begin uploading all videos
+
+### Command-line Version
 
 ### Basic Usage
 
