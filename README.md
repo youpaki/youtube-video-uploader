@@ -46,7 +46,7 @@ Before using this application, you need to:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/youtube-video-uploader.git
+   git clone https://github.com/youpaki/youtube-video-uploader.git
    cd youtube-video-uploader
    ```
 
